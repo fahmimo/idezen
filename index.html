@@ -20,6 +20,7 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
@@ -28,6 +29,7 @@
             flex-direction: column;
             overflow-x: hidden;
         }
+
         /* Background Design */
         .bg-glow {
             position: absolute;
@@ -49,4 +51,167 @@
             border-radius: 50%;
             z-index: -1;
         }
+
         /* Navbar */
+        nav {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Section */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            margin-top: -5vh;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            max-width: 800px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        p.subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            animation: slideUp 1s ease-out;
+        }
+
+        /* App Store Button */
+        .app-store-btn {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            animation: slideUp 1.2s ease-out;
+            cursor: pointer;
+        }
+
+        .app-store-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-icon {
+            font-size: 1.5rem;
+            margin-right: 12px;
+        }
+        
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .btn-text-small {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+        }
+        .btn-text-large {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: auto;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <nav>
+        <div class="logo">Idezen</div>
+    </nav>
+
+    <main>
+        <div class="badge">✨ iOS App Coming Soon</div>
+        <h1>Elevate Your Living Space</h1>
+        <p class="subtitle">Your premium digital magazine for architecture, interior design, and modern living. Curated inspiration right in your pocket.</p>
+        
+        <a href="#" class="app-store-btn">
+            <span class="btn-icon"></span>
+            <div class="btn-text">
+                <span class="btn-text-small">Download on the</span>
+                <span class="btn-text-large">App Store</span>
+            </div>
+        </a>
+    </main>
+
+    <footer>
+        <a href="Privacy%20Policy">Privacy Policy</a>
+        <a href="TERMS_OF_SERVICE.md">Terms of Service</a>
+        <a href="mailto:amikastudios@gmail.com">Contact Support</a>
+    </footer>
+</body>
+</html>
