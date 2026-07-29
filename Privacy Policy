@@ -1,0 +1,22 @@
+Privacy Policy
+Overview Idezen is an architecture and interior-design digital magazine app. This policy explains what information the app collects, how it is used, and the choices available to you.
+
+Information We Collect If you sign in with Google or Apple, we receive the basic profile information those providers share with us — typically your name and email address. We do not collect this information if you use the app as a guest.
+
+The app also stores information locally on your device: which issues you have saved, your reading progress, your download status for offline issues, and your appearance and notification preferences.
+
+How We Use Information Sign-in information is used only to identify your account across devices. Locally stored data is used to power features like Continue Reading, your Reading List, and offline downloads. We do not sell personal information.
+
+Where Data Is Stored Authentication is handled by Firebase Authentication (Google). Your library data — saved issues, reading progress, and download status — is stored locally on your device and is not currently synced to a server.
+
+Third-Party Services The app uses Firebase (Google) for authentication, Google Sign-In, and Sign in with Apple for account access. Each of these providers has its own privacy policy governing how they handle your information.
+
+Your Choices You can reset your locally stored data at any time from Profile > Danger Zone > Reset Local Data, or remove your account and its local data via Delete Account. Signing out at any time stops any further use of your account information by the app.
+
+Children’s Privacy Idezen is not directed at children under 13, and we do not knowingly collect personal information from children.
+
+Changes to This Policy If this policy changes, an updated version will be made available in the app with a new "Last updated" date.
+
+Contact Questions about this policy can be directed to 
+amikastudios@gmail.com
+Last updated: July 2026
